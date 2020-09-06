@@ -1,0 +1,156 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0%;
+  font-family: 'Noto Sans JP', sans-serif;
+  background-color: #212529;
+  color: #E9ECEF;
+}
+
+.navbar {
+  background-color: #212529;
+  border-radius: 1rem;
+  display: block;
+  margin: 1rem;
+  overflow: hidden;
+  padding-top: 1.6rem;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.navbar a {
+  color: #DEE2E6;
+  font-size: clamp(2rem, calc(5vw + .2rem), 3.2rem);
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  font-size: 1.6;
+  color: #F8F9FA;
+}
+
+@media screen and (min-width: 1000px) {
+  .navbar a {
+    font-size: 2.4rem;
+  }
+}
+
+.section {
+  background-color: #2B3035;
+  border-radius: 1.6rem;
+  color: #DEE2E6;
+  display: block;
+  margin: 1rem 1rem 0 1rem;
+}
+
+@supports (background-blend-mode: multiply) {
+  .section {
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+    background-image: url(/img/code.jpg);
+    background-color: #212529;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 200%;
+  }
+}
+
+.section__heading {
+  color: #DEE2E6;
+  font-size: clamp(3rem, calc(5vw + .2rem), 4.8rem);
+  font-weight: 500;
+  line-height: 1.6;
+  padding: 12rem 2.4rem 12rem 2.4rem;
+}
+
+@media screen and (min-width: 1000px) {
+  .section__heading {
+    display: flexbox;
+    float: left;
+    font-size: 3.2rem;
+    padding: 3.2rem 6.4rem 3.2rem 6.4rem;
+  }
+}
+
+.section__details {
+  font-size: clamp(1rem, calc(5vw + .2rem), 1.6rem);
+  font-weight: 100;
+  padding: 2.4rem 2.4rem 4.8rem 2.4rem;
+}
+
+.section__details .social-links {
+  color: #F8F9FA;
+  font-weight: 400;
+}
+
+@media screen and (min-width: 1000px) {
+  .section__details {
+    display: flexbox;
+    font-size: 1.2rem;
+    padding: 3.2rem;
+    text-align: left;
+  }
+}
+
+.section__signature {
+  color: #ADB5BD;
+  font-family: 'La Belle Aurore', cursive;
+  position: relative;
+  bottom: -2rem;
+  right: .6rem;
+  text-align: right;
+}
+
+.section .button {
+  background-color: #BBC7A4;
+  border-radius: 3.2rem;
+  border: solid 1.6px #F8F9FA;
+  color: #212529;
+  display: inline-block;
+  font-size: clamp(1rem, calc(5vw + .2rem), 1.6rem);
+  font-weight: bold;
+  margin: 3.2rem 2.4rem 4.8rem 2.4rem;
+  padding: 1.2rem 1.6rem;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 1000px) {
+  .section .button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    float: inline-end;
+    font-size: 1.2rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 1.6rem;
+    padding: 0.6rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .section {
+    background-color: #2B3035;
+    background-image: none;
+    margin: 3.2rem;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .section {
+    background-image: none;
+    margin: 10rem;
+    padding: 4.8rem 10rem 10rem 2.4rem;
+  }
+}
+/*# sourceMappingURL=main.css.map */
