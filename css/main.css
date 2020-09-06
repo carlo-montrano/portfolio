@@ -57,7 +57,7 @@ body {
     background-attachment: fixed;
     background-blend-mode: multiply;
     background-image: url(/img/code.jpg);
-    background-color: #212529;
+    /*background-color: #212529;*/
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 200%;
