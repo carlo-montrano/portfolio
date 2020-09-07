@@ -49,19 +49,8 @@ body {
   border-radius: 1.6rem;
   color: #DEE2E6;
   display: block;
-  margin: 1rem 1rem 0 1rem;
-}
-
-@supports (background-blend-mode: multiply) {
-  .section {
-    background-attachment: fixed;
-    background-blend-mode: multiply;
-    /*background-image: url(/img/code.jpg);
-    background-color: #212529;*/
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: 200%;
-  }
+  margin: 1.6rem 1rem;
+  padding: 1.6rem;
 }
 
 .section__heading {
@@ -69,22 +58,27 @@ body {
   font-size: clamp(3rem, calc(5vw + .2rem), 4.8rem);
   font-weight: 500;
   line-height: 1.6;
-  padding: 12rem 2.4rem 12rem 2.4rem;
+  margin: 1rem 0;
+  padding: 2.4rem 2.4rem 1.6rem 2.4rem;
 }
 
 @media screen and (min-width: 1000px) {
   .section__heading {
-    display: flexbox;
+    display: inline-block;
     float: left;
     font-size: 3.2rem;
-    padding: 3.2rem 6.4rem 3.2rem 6.4rem;
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 2.4rem;
+    width: 50%;
   }
 }
 
 .section__details {
   font-size: clamp(1rem, calc(5vw + .2rem), 1.6rem);
   font-weight: 100;
-  padding: 2.4rem 2.4rem 4.8rem 2.4rem;
+  padding: 0 2.4rem;
 }
 
 .section__details .social-links {
@@ -94,47 +88,42 @@ body {
 
 @media screen and (min-width: 1000px) {
   .section__details {
-    display: flexbox;
+    display: inline-block;
     font-size: 1.2rem;
-    padding: 3.2rem;
+    padding: 2.4rem;
+    position: relative;
+    top: 0;
+    right: 0;
     text-align: left;
+    width: 50%;
   }
-}
-
-.section__signature {
-  color: #ADB5BD;
-  font-family: 'La Belle Aurore', cursive;
-  position: relative;
-  bottom: -2rem;
-  right: .6rem;
-  text-align: right;
 }
 
 .section .button {
   background-color: #BBC7A4;
   border-radius: 3.2rem;
-  border: solid 1.6px #F8F9FA;
+  border: solid 1.6px #212529;
   color: #212529;
-  display: inline-block;
+  display: block;
   font-size: clamp(1rem, calc(5vw + .2rem), 1.6rem);
   font-weight: bold;
-  margin: 3.2rem 2.4rem 4.8rem 2.4rem;
-  padding: 1.2rem 1.6rem;
+  margin: 3.2rem 2.4rem;
+  padding: 1.2rem;
+  text-align: center;
   text-decoration: none;
 }
 
 @media screen and (min-width: 1000px) {
   .section .button {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    float: inline-end;
-    font-size: 1.2rem;
+    display: block;
+    font-size: 1.6rem;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin: 0 1.6rem;
-    padding: 0.6rem;
+    margin: 1.6rem;
+    position: relative;
+    bottom: 0;
+    padding: 1rem;
   }
 }
 
