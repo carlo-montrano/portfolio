@@ -3,36 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Carlo Montrano | My Personal Portfolio</title>
 
-    <!-- CSS Stylesheets  -->
+    <!-- CSS Stylesheets -->
     <link rel="stylesheet" href="css/main.css">
 
-    <!-- Google Fonts  -->
-    <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Noto+Sans+JP:wght@100;400;500&display=swap" rel="stylesheet">
+    <!-- Favicon Icon  -->
+    <link rel="icon" href="img/favicon.ico">  
 
+    <!-- FontAwesome Icons -->
+    <script src="https://kit.fontawesome.com/737a4f4db0.js" crossorigin="anonymous"></script>
+    
 </head>
-<body>
-    <header>
-        <div class="navbar">
-
-            <a href="#" class="logo">Carlo Montrano</a>
-            
-        </div>
+<body class="light-mode">
+    <header class="header light-mode">
+        <h1 class="header__logo">Carlo Montrano</h1>
     </header>
-    <main>
-        <div class="section">
-
-            <h3 class="section__heading">Hi,<br>I'm <span style="color: #BBC7A4;">Carlo</span>,<br>web developer.</h3>
-
-            <p class="section__details">
-                Hi, I'm Carlo Montrano, front-end web developer. <br><br>HTML5, CSS3, JavaScript, Python, Sass, Bootstrap, Git and Github are some of the programming languages and tools I work with.<br><br> I'm usually based in Turin, Italy.<br><br> You can find me and some works on <a href="https://www.linkedin.com/in/carlo-montrano-7319aa1b5/" class="social-links">LinkedIn</a> and <a href="https://github.com/carlo-montrano" class="social-links">Github</a>. 
+    <div class="main">
+            <div class="container light-mode">
+                <div class="container__wrapper">
+                    <a href="mailto: carlo.montrano@gmail.com"><img src="img/profilo.jpg" alt=""></a>
+                </div>
+                <h2 class="container__card">Hi,<br> I'm <span style="color: var(--clr-text);">Carlo</span>,<br> web developer.</h2>
+                <p class="container__details">
+                    Full-Stack Web Developer.
+                </p>
+            </div>
+            <div class="container light-mode">
+                <h3 class="container__title">About Me</h3>
                 <br>
-            </p>
+                <p class="container__description">
+                    Hi,I'm Carlo Montrano, I'm a web developer.<br><br>
 
-            <a class="button" href="mailto:carlo.montrano@gmail.com">Contact me</a>
+                    HTML, CSS, JavaScript (and jQuery), Sass, Bootstrap, Node.js (and Express), Python, Git and Github are some of the programming languages and tools I work with or I'm familiar with.<br><br>
 
+                    I'm usually based in Turin, Italy.<br><br>
+
+                    You can find me and some works on <a href="https://www.linkedin.com/in/carlo-montrano-7319aa1b5/">LinkedIn</a> and <a href="https://github.com/carlo-montrano">Github</a>.<br>
+                </p>
+                <br>
+                <a href="mailto: carlo.montrano@gmail.com" class="container__button">Drop me a line</a>
+            </div>
         </div>
-    </main>
+    <footer class="footer light-mode">
+        <p>Copyright &copy; 2020 Carlo Montrano<br>All Rights Reserved</p>
+        <div class="footer__social">
+            <a href="mailto: carlo.montrano@gmail.com"><i class="fas fa-at"></i> Email</a>
+            <a href="https://github.com/carlo-montrano"><i class="fab fa-github"></i> Github</a>
+            <a href="https://www.linkedin.com/in/carlo-montrano-7319aa1b5/"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+        </div>
+    </footer>
+    
+    <!-- JavaScript Script -->
+    <script src="js/index.js"></script>
+
 </body>
 </html>
