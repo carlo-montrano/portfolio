@@ -56,7 +56,7 @@ body {
 
     p {
         display: inline-block;
-        font-size: clamp(.6rem, calc(5vw + .2rem), 1rem);
+        font-size: clamp(.6rem, calc(5vw + .1rem), .8rem);
         font-weight: 200;
 
         @media screen and (min-width: 900px) {
@@ -99,6 +99,7 @@ body {
             margin: .2rem;
             text-decoration: none;
             color: var(--clr-text);
+            font-size: clamp(.6rem, calc(5vw + .1rem), .9rem);
 
             &:visited {
                 color: var(--clr-text);
@@ -202,7 +203,7 @@ body {
     &__details {
         color: var(--clr-text);
         display: block;
-        font-size: clamp(1rem, calc(5vw + .2rem), 1.4rem);
+        font-size: clamp(1rem, calc(5vw + .2rem), 1.2rem);
         font-weight: 200;
         padding: 1rem;
         margin: 0 0 1rem 0;
@@ -329,7 +330,7 @@ body {
     &__button {
         font-size: 1.1rem;
         display: block;
-        background-color: var(--clr-bg-button, black);
+        background-color: var(--clr-bg-button);
         color: var(--clr-text-button);
         margin: 1rem;
         padding: 1rem;
@@ -371,7 +372,7 @@ body {
     --clr-text: #212529;
     --clr-h2: #6C757D;
     --clr-bg-button: #343A40;
-    --clr-text-button: #DEE2E6;
+    --clr-text-button: #F8F9FA;
     --clr-title: #343A40;
     --clr-main: #DEE2E6;
 }
